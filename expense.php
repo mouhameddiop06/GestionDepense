@@ -9,7 +9,7 @@
       $stmt = $this->pdo->prepare("SELECT SUM(Cost) AS TOTAL FROM expense WHERE UserId = :UserId AND DATE(`Date`) >= CURDATE() - INTERVAL :n DAY");
       $stmt->bindParam(":UserId", $UserId, PDO::PARAM_INT);
       $stmt->bindParam(":n", $n, PDO::PARAM_INT);
-      $stmt->execute();
+      $stmt->execute(); 
       $today = $stmt->fetch(PDO::FETCH_OBJ);
       if($today == NULL)
       {
