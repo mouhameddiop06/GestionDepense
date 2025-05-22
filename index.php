@@ -1,6 +1,6 @@
 <?php 
     include_once "init.php";
-    
+     
     // User login check
     if (isset($_SESSION['UserId'])) {
       header('Location: templates/3-Dashboard.php');
