@@ -4,7 +4,7 @@
     protected $pdo;
     
     function __construct($pdo) {
-      $this->pdo = $pdo;
+      $this->pdo = $pdo; 
     }
  
     public function create($table, $fields = array()) {
