@@ -9,7 +9,7 @@ if(isset($_POST['username'])){
    
       if($result){
           $response = "Not Available.";
-      }
+      } 
    echo $response;
    die;
 }
