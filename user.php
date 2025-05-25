@@ -1,5 +1,5 @@
 <?php
-    class User extends Base{
+    class User extends Base{  
         function __construct($pdo)
         {
             $this->pdo = $pdo;
