@@ -1,5 +1,5 @@
 <?php  
-  class Budget extends Base {
+  class Budget extends Base { 
     function __construct($pdo) {
       $this->pdo = $pdo;
     }
